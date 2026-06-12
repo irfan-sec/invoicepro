@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.min.js">
+</head>
+
+<body>
+    <section id="dashboard_main">
+        <div class="dashboard_sidebar"></div>
+        <div class="dashboard_body">
+            <div class="dashboard_header">
+                <h1>Dashboard</h1>
+                <div class="dahsboard_user">
+                    <div class="dashboard_user_notify">
+                        <button class="notification_button"><i class="fa-regular fa-bell"
+                                style="font-size: 25px; background-color: rgb(255, 255, 255);"></i></button>
+                        <img src="../assets/WhatsApp Image 2026-06-06 at 10.47.23 PM.jpeg" alt="">
+                        <div class="dashboard_userdetail">
+                            <h3>user1111<h3>
+                                    <h5>Administrater</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="dashboard_cards">
+                <div class="card1">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <div class="cards_price">
+                        <h4>Total Invoice</h4>
+                        <h2>$0</h2>
+                    </div>
+                </div>
+                <div class="card1">
+                    <i class="fa-solid fa-dollar-sign" style="background-color: green;"></i>
+                    <div class="cards_price">
+                        <h4>Paid Invoice</h4>
+                        <h2>$0</h2>
+                    </div>
+                </div>
+                <div class="card1">
+                    <i class="fa-regular fa-clock" style="padding: 10px 10px;"></i>
+                    <div class="cards_price">
+                        <h4>Pending Invoice</h4>
+                        <h2>$0</h2>
+                    </div>
+                </div>
+                <div class="card1">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <div class="cards_price">
+                        <h4>Total Revenue</h4>
+                        <h2>$0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard_content">
+                <div class="dashboard_content_library">
+                    <div class="content_library_1">
+                        <div>
+                            <canvas id="myChart"></canvas>
+                        </div>
+
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                        <script>
+                            const ctx = document.getElementById('myChart');
+
+                            new Chart(ctx, {
+                                type: 'line',
+                                data: {
+                                    labels: ['Red', 'Blue', 'Yellow', 'Green'],
+                                    datasets: [{
+                                        label: '# of Votes',
+                                        data: [12, 19,8, 5, 2, 3],
+                                        borderWidth: 1
+                                    }]
+                                },
+                                options: {
+                                    scales: {
+                                        y: {
+                                            beginAtZero: true
+                                        }
+                                    }
+                                }
+                            });
+                        </script>
+
+                    </div>
+                    <div class="content_library_2">
+                        <div class="content_library_2_1">
+
+
+                        </div>
+                        <div class="content_library_2_2"></div>
+                    </div>
+                </div>
+                <div class="dashboard_invoice_history">
+                    <button class="history_button">
+                        <h1>+</h1> AddInvoice
+                    </button>
+                    <div class="history_recent_invoices">
+                        <h3>Some Recent Invoices</h3>
+                        <div class="history_recent_invoice1">
+                            <div class="invoice1_rec_number">
+                                <h4>inv-2026-156</h4>
+                                <h5>Tech Solution</h5>
+                            </div>
+                            <div class="invoice1_price"  style="color: orangered;">
+                                <h4>$1245.45</h4>
+                                <h5>PAID</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="history_recent_invoice1">
+                            <div class="invoice1_rec_number">
+                                <h4>inv-2026-156</h4>
+                                <h5>Tech Solution</h5>
+                            </div>
+                            <div class="invoice1_price"  style="color: rgb(13, 51, 177);">
+                                <h4>$1245.45</h4>
+                                <h5>PAID</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="history_recent_invoice1">
+                            <div class="invoice1_rec_number">
+                                <h4>inv-2026-156</h4>
+                                <h5>Tech Solution</h5>
+                            </div>
+                            <div class="invoice1_price" style="color: orangered;">
+                                <h4>$1245.45</h4>
+                                <h5>PAID</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="history_recent_invoice1">
+                            <div class="invoice1_rec_number">
+                                <h4>inv-2026-156</h4>
+                                <h5>Tech Solution</h5>
+                            </div>
+                            <div class="invoice1_price" style="color: rgb(0, 61, 175);">
+                                <h4>$1245.45</h4>
+                                <h5>PAID</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="history_recent_invoice1">
+                            <div class="invoice1_rec_number">
+                                <h4>inv-2026-156</h4>
+                                <h5>Tech Solution</h5>
+                            </div>
+                            <div class="invoice1_price" style="color: orangered;">
+                                <h4>$1245.45</h4>
+                                <h5>PAID</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
