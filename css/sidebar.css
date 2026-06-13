@@ -1,121 +1,108 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
-    width: 100%;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
-
-
+  width: 100%;
+  /* height: 100vh; */
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
 }
 
 .hero {
-    width: 25%;
-    display: flex;
-
+  width: 25%;
+  display: flex;
 }
 
 .sidebar {
-    text-align: center;
-    width: 92%;
-    height: 100%;
-    /* background-color: green; */
-    background-color: #F8F9FA;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    gap: 30px;
-    padding-top: 15px;
-
+  text-align: center;
+  width: 92%;
+  height: 100%;
+  /* background-color: green; */
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 30px;
+  padding-top: 15px;
 }
 
 .barone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 .bartwo ul a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.74);
-
-
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.74);
 }
 
 .bartwo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .bartwo ul {
-
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 55px;
-    list-style: none;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 55px;
+  list-style: none;
 }
 
 ul li {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 15px;
-    padding: 10px;
-    width: 170px;
-   
-    color: black;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+  padding: 10px;
+  width: 170px;
+
+  color: black;
 }
-ul a:hover{
-    background-color: orangered;
- border-radius: 10px;
- transition: 0.5s;
- color: white;
+ul a:hover {
+  background-color: orangered;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: white;
 }
 
 .procard {
-    width: 70%;
-    height: 90%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-
+  width: 70%;
+  height: 90%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .procard button {
-    padding: 10px;
-    background-color: rgb(248, 79, 18);
-    border: none;
-    border-radius: 5px;
-    color: white;
-
+  padding: 10px;
+  background-color: rgb(248, 79, 18);
+  border: none;
+  border-radius: 5px;
+  color: white;
 }
-.procard button:hover{
-    cursor: pointer;
-    padding: 11px;
-    transition: 0.5s;
+.procard button:hover {
+  cursor: pointer;
+  padding: 11px;
+  transition: 0.5s;
 }
 .barthree {
-    width: 100%;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    margin-top: 70px;
-
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 70px;
 }
-
-
