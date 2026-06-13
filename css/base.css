@@ -1,0 +1,108 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+#record-page {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.cards {
+  height: 40vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  height: 90%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid gray;
+  text-align: center;
+  gap: 7%;
+  padding: 10px 4px;
+}
+.card img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  align-items: center;
+  padding: 3px;
+  background-color: #fde0c2;
+}
+
+button {
+  padding: 10px 35px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #fa620d;
+  background-color: #fff;
+  color: #fa620d;
+  font-size: 15px;
+}
+button:hover {
+  background-color: #fa620d;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.display-Records {
+  height: 80vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2px;
+}
+.history {
+  height: 100%;
+  width: 92%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 18px;
+}
+.records {
+  height: 80%;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+.record {
+  height: 9.6%;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  /* border-radius: 5px; */
+  display: flex;
+  justify-content: center;
+}
+.record .num {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.record div {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.record div {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
