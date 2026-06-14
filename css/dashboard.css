@@ -3,23 +3,27 @@
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 #dashboard_main {
     width: 100%;
     height: 100vh;
     display: flex;
     gap: 1%;
 }
+
 .dashboard_sidebar {
-    width: 19%;
+    width: 25%;
     height: 100%;
     background-color: rgb(255, 255, 255);
 }
+
 .dashboard_body {
-    width: 100%;
+    width: 75%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
+
 .dashboard_header {
     width: 100%;
     height: 13%;
@@ -28,6 +32,7 @@
     align-items: center;
     gap: 45%;
 }
+
 .dashboard_user_notify {
     padding: 15px 30px;
     display: flex;
@@ -37,11 +42,13 @@
     border: 1px solid rgba(255, 68, 0, 0.438);
     border-radius: 10px;
 }
+
 .dashboard_user_notify img {
-    width: 50px;
-    height: 50px;
+    width: 35%;
+    height: 25%;
     border-radius: 100%;
 }
+
 .dashboard_cards {
     width: 100%;
     height: 22%;
@@ -49,7 +56,9 @@
     justify-content: center;
     align-items: center;
     gap: 4%;
+    font-size: 70%;
 }
+
 .dashboard_cards .card1 {
     width: 17%;
     height: 60%;
@@ -60,14 +69,17 @@
     border: 1px solid rgba(71, 71, 71, 0.74);
     gap: 3%;
     text-align: center;
+   
 
 }
-.dashboard_cards .card1 i{
-    font-size: 30px;
+
+.dashboard_cards .card1 i {
     border-radius: 100%;
-    padding: 8px 13px;
+    padding: 8px 15px;
     background-color: orange;
+    
 }
+
 .dashboard_content {
     width: 100%;
     height: 60%;
@@ -75,38 +87,53 @@
     justify-content: center;
     align-items: center;
 }
+
 .dashboard_content_library {
     width: 55%;
     height: 100%;
 }
-.content_library_1{
-    width: 96%;
-    height: 75%;
+
+.content_library_1 {
+    width: 98%;
+    height: 55%;
     border: 1px solid black;
 }
-.content_library_2{
-    width: 96%;
-    height:45% ;
+
+.content_library_2 {
+    width: 98%;
+    height: 35%;
 }
+
 .dashboard_invoice_history {
     width: 25%;
-    height: 90%;
+    height: 100%;
     display: flex;
     align-items: left;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0.377);
-    border-radius:20px;
+    border-radius: 20px;
+    overflow-y: auto;
+    font-size: 13px;
+   
 }
+
 .history_button {
-    padding: 8px;
+    padding: 10px 30px;
     border: none;
     background-color: rgb(253, 112, 60);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+      position: sticky;
+  top: 0;
+  z-index: 10;
+
+  
+   
 }
-.history_recent_invoices{
+
+.history_recent_invoices {
     width: 98%;
     height: 70%;
     display: flex;
@@ -116,14 +143,28 @@
     gap: 1%;
 }
 
-.history_recent_invoice1{
+.history_recent_invoice1 {
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
     gap: 20%;
     color: rgba(0, 0, 0, 0.74);
 }
-.invoice1_price h5{
-background-color: rgba(255, 38, 0, 0.432);
-border-radius: 50px;
+
+.invoice1_price h5 {
+    background-color: rgba(255, 38, 0, 0.432);
+    border-radius: 50px;
+}
+
+.content_library_1 {
+    width: 98%;
+    height: 55%;
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#revenueChart {
+    width: 100% !important;
+    height: 100% !important;
 }
