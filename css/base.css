@@ -9,13 +9,13 @@ body {
 
 .record-page {
   height: 100%;
-  width: 70%;
+  width: 70vw;
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: right; */
 }
 .cards {
-  height: 30%;
+  height: 50%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -53,6 +53,7 @@ button {
   background-color: #fff;
   color: #fa620d;
   font-size: 15px;
+  cursor: pointer;
 }
 button:hover {
   background-color: #fa620d;
@@ -61,7 +62,7 @@ button:hover {
 }
 
 .display-Records {
-  height: 70%;
+  height: 80%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -69,7 +70,7 @@ button:hover {
 }
 .history {
   height: 100%;
-  width: 92%;
+  width: 90%;
   border: 1px solid gray;
   border-radius: 5px;
   padding: 18px;
