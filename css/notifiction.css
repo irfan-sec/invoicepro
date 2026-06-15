@@ -1,0 +1,159 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+
+.main_div {
+    width: 98%;
+    height: 99%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+.div1 {
+    height: 9%;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.4%;
+
+}
+
+.nav1 b {
+    font-size: 20px;
+}
+
+.nav1 button {
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+select {
+    outline: none;
+    border: none;
+}
+
+/* option {
+    outline: none;
+    border: none;
+} */
+
+.div2 {
+    width: 6%;
+    height: 7%;
+    background-color: rgb(243, 229, 229);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.div2 div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div2 div:hover {
+    background-color: darkorange;
+    border-radius: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.today {
+    height: 7%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.div3 {
+    width: 100%;
+    height: 27%;
+    /* background-color: aqua; */
+    box-shadow: 2px 1px 1px 1px rgb(161, 160, 160);
+    border-top: 1px solid rrgb(223, 219, 219)
+}
+
+.div3child {
+    width: 100%;
+    height: 33.3%;
+    /* background-color: aqua; */
+    display: flex;
+    box-shadow: 6px 1px 1px 1px rgb(247, 245, 245);
+}
+
+.div3a {
+    /* background-color: azure; */
+
+
+}
+
+.div3b {
+    /* background-color: rgb(46, 129, 129); */
+}
+
+.div3c {
+    /* background-color: rgb(28, 104, 104); */
+}
+
+.a {
+    width: 10%;
+    height: 100%;
+    /* background-color: rgb(109, 41, 41); */
+}
+
+.b {
+    width: 77%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.c {
+    width: 13%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

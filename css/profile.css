@@ -1,0 +1,330 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.user-profile-section {
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.user-profie-main-div {
+    width: 98%;
+    height: 98%;
+    /* background-color: white; */
+    /* display: flex;
+    flex-direction: column;
+    gap: 30px; */
+}
+
+.user-profile-header {
+    width: 100%;
+    height: 9%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 2px 2px 18px 6px rgb(248, 240, 240);
+}
+
+.user-profile-header div {
+    width: 48%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.user-name {
+    display: flex;
+    align-items: center;
+}
+
+.edit {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.edit button {
+    box-shadow: 1px 0px 1px 1px rgb(223, 212, 212);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    /* border: none; */
+    /* border: 0.1px solid gray; */
+    padding: 4px 7px;
+    cursor: pointer;
+}
+
+.user-profile {
+    height: 21%;
+    width: 100%;
+    background-color: rgb(245, 243, 243);
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    /* font-size: 5px; */
+
+}
+
+.user-pic {
+    width: 11%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+
+}
+
+.pic {
+    width: 60px;
+    height: 60px;
+    /* background-color: black; */
+    border-radius: 50%;
+    /* background-image: url(/ChatGPT\ Image\ May\ 21\,\ 2026\,\ 02_25_46\ AM.png); */
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.pic img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.user-pic button {
+    padding: 4px 4px;
+    outline: none;
+    border: none;
+    color: rgb(228, 189, 117);
+    cursor: pointer;
+}
+
+.username {
+    width: 15%;
+    height: 80%;
+    /* background-color: azure; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* gap: 10px; */
+}
+
+.active {
+    width: 50%;
+    height: 20%;
+    border-radius: 30px;
+    background-color: rgba(6, 245, 6, 0.226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    color: rgb(6, 245, 6);
+    cursor: pointer;
+}
+
+.active div {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(6, 245, 6);
+    border-radius: 50%;
+}
+
+.personal-information {
+    width: 100%;
+    height: 25%;
+    background-color: rgb(245, 243, 243);
+    margin-top: 20px;
+
+}
+
+/* .personal-information div { */
+/* width: 100%;
+height: 20%;
+display: flex;
+/* border: 1px solid rgb(255, 255, 255); */
+
+/* } */
+
+.personal-information-a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    width: 50%;
+    height: 20%;
+    /* background-color: black; */
+
+
+}
+
+.personal-information-a button {
+    padding: 1px 6px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.personal-information-div {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    /* align-items: center; */
+    /* background-color: blue; */
+    /* box-shadow: 1px 1px 1px 1px white; */
+    /* border: 0.111px solid white; */
+    border-bottom: 1px solid snow;
+}
+
+.n1 {
+    width: 20%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left: 4%;
+}
+
+.n2 {
+    width: 66%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+}
+
+.n3 {
+    width: 10%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-information {
+    width: 100%;
+    height: 25%;
+    background-color: rgb(245, 243, 243);
+    margin-top: 20px;
+}
+
+.conpany-information-child {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    /* padding-left: 50px; */
+    border-bottom: 1px solid snow;
+}
+
+.company-information-childa1 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.company-information-childb1 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.company-information-childb2 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.company-information-childc1 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.company-information-childc2 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.company-information-childd1 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.company-information-childd2 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.company-information-childe1 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.company-information-childe2 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    height: 10%;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(245, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-main {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons-main button {
+    padding: 5px 13px;
+    outline: none;
+    border: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: rgb(235, 232, 228);
+}
+
+.btn2 {
+    background-color: rgb(223, 184, 126);
+}
+
+.btn3 {
+    color: white;
+    background-color: rgb(192, 60, 8);
+}
