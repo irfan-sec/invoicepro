@@ -3,24 +3,28 @@
   margin: 0%;
   font-family: "Poppins", sans-serif;
 }
-
-#record-page {
-  height: auto;
-  width: 100%;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: end;
+}
+
+.record-page {
+  height: 100%;
+  width: 70vw;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: right; */
 }
 .cards {
-  height: 40vh;
-  width: 80%;
+  height: 50%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  /* border: 2px solid; */
 }
 
 .card {
-  height: 90%;
+  height: 70%;
   width: 20%;
   display: flex;
   flex-direction: column;
@@ -29,7 +33,7 @@
   border-radius: 8px;
   border: 2px solid gray;
   text-align: center;
-  gap: 7%;
+  gap: 10px;
   padding: 10px 4px;
 }
 .card img {
@@ -49,6 +53,7 @@ button {
   background-color: #fff;
   color: #fa620d;
   font-size: 15px;
+  cursor: pointer;
 }
 button:hover {
   background-color: #fa620d;
@@ -57,15 +62,15 @@ button:hover {
 }
 
 .display-Records {
-  height: 80vh;
-  width: 80%;
+  height: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   padding: 2px;
 }
 .history {
   height: 100%;
-  width: 92%;
+  width: 90%;
   border: 1px solid gray;
   border-radius: 5px;
   padding: 18px;

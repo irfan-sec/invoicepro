@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9fafb;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.header {
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+}
+
+.btn-contact {
+    background: #f97316;
+    color: white;
+    padding: 10px 20px;
+
+
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    gap: 50px;
+}
+
+.hero-text h1 {
+    margin-left: 20px;
+    font-size: 46px;
+    color: #1e293b;
+}
+
+.hero-text p {
+    margin-left: 20px;
+    /* font-size: 48px; */
+    /* color: #1e293b; */
+}
+
+.hero-text span {
+    color: #f97316;
+}
+
+.featured-bar {}
+
+.hero-btns {
+    gap: 30px;
+    margin: 20px 20px;
+}
+
+.hero-image {
+    width: 40%;
+    height: 30vh;
+
+
+    margin-left: 200px;
+    /* background-color: rgb(61, 252, 252); */
+    border-radius: 10px;
+}
+
+.btn-signup {
+    background: #f97316;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-login {
+    background: #fffbf9;
+    color: rgb(2, 1, 1);
+    padding: 10px 25px;
+    border: none;
+    border: 1px solid #f97316;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+.features-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+.section-title {
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.features-container {
+    margin: 0px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 260px;
+    /* display: flex; */
+    text-align: center;
+    background: rgb(255, 254, 254);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+    margin-right: 150px;
+    margin-top: 10px;
+    font-size: 24px;
+    color: #1e293b;
+}
+
+.feature-item i {
+    margin-right: 125px;
+    font-size: 35px;
+    color: #f97316;
+    margin-bottom: 15px;
+}
+.feature-item p {
+    margin-right: 50px;
+    color: #555
+}
+
+
+.work {
+    display: flex;
+
+    background-color: #87b7e7;
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+}
+
+.work h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    margin-top: 20px;
+}
+
+.work-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 73%;
+    margin: 5px auto;
+    gap: 26px;
+    /* background-color: #f97316; */
+}
+
+.work-step {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.work-icon {
+    /* width: 80px;
+    height: 80px;
+    padding: 20px 40px;
+    font-size: 40px;
+    background-color: #ebeef1;
+    color: #f97316;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #eee3db; */
+
+}
+
+
+.work-step {
+    width: 35%;
+    height: 200px;
+    background-color: white;
+}
+
+.stats {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto 0 auto;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+.stat-item {
+    width: 20%;
+    text-align: center;
+}
+
+.my-icon {
+    display: inline-block;
+    font-size: 30px;
+}
+
+.review {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.review-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
