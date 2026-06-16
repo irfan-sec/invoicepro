@@ -1,5 +1,6 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +8,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="../css/newinvoice.css">
 </head>
+
 <body>
     <section>
         <div class="outermain">
 
             <div class="main1">
                 <div class="box1">
-                    
-                <div class="h1"><h2> Client Detail</h2></div>
-                <div class="h2"> 
-                    <h2>Select client</h2>
-                </div>
-                <div class="input">
-                    <div class="input input1">
-                        <input type="text" placeholder="ABCD">
+
+                    <div class="h1">
+                        <h2> Client Detail</h2>
                     </div>
-                    <div class="input button">
-                       <button>+ Add Client</button>
+                    <div class="h2">
+                        <h2>Select client</h2>
+                    </div>
+                    <div class="input">
+                        <div class="input input1">
+                            <input type="text" placeholder="ABCD">
+                        </div>
+                        <div class="input button">
+                            <button>+ Add Client</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+
+                    <div class="b2h1">
+                        <h2>Invoice Number</h2>
+                    </div>
+                    <div class="b2input">
+                        <input type="text" placeholder="abcdefg">
+                    </div>
+                    <div class="date">
+                        <div class="issue">
+                            <h2>Issue Date</h2>
+                            <input type="text" name="" id="" part="1/1/2026" placeholder="1/1/2026">
+                        </div>
+                        <div class="duedate">
+                            <h2>Issue Date</h2>
+                            <input type="text" name="" id="" placeholder="1/2/2026">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="box2">
-                
-                <div class="b2h1"> 
-                    <h2>Invoice Number</h2>
+            <div class="main2">
+                <div class="h1">
+                    <h1>Item/Service</h1>
                 </div>
-                <div class="b2input">
-                    <input type="text" placeholder="abcdefg">
-                </div>
-                <div class="date">
-                    <div class="issue">
-                        <h2>Issue Date</h2>
-                        <input type="text" name="" id="" part="1/1/2026" placeholder="1/1/2026">
+                <div class="item">
+                    <ul>
+                        <li>Item</li>
+                        <li>Descriptions</li>
+                        <li>QTY</li>
+                        <li>Amounts</li>
+                    </ul>
+                    <div class="iteminput">
+                        <input type="text" name="" id="" placeholder="Webdesign">
+                        <input type="text" name="" id="" placeholder="Redesign">
+                        <input type="text" name="" id="" placeholder="1">
+                        <input type="text" name="" id="" placeholder="10$">
                     </div>
-                    <div class="duedate">
-                        <h2>Issue Date</h2>
-                          <input type="text" name="" id="" placeholder="1/2/2026">
+                    <div class="addnew">
+                        <button>+ Add New </button>
                     </div>
                 </div>
             </div>
@@ -79,33 +106,40 @@
             <div class=" b2">
                 <div class="discountbox">
                     <div class="h2">
-                        <h2>Total</h2>
+                        <h2>Thankyou</h2>
                     </div>
+                </div>
+                <div class=" b2">
+                    <div class="discountbox">
+                        <div class="h2">
+                            <h2>Total</h2>
+                        </div>
 
-                    <div class="discount discount1">
-                        <h2>Discount</h2>
-                        <input type="text" name="" id="" placeholder="5">
+                        <div class="discount discount1">
+                            <h2>Discount</h2>
+                            <input type="text" name="" id="" placeholder="5">
+                        </div>
+
+                        <div class="taxt discount1">
+                            <h2>Tax.........</h2>
+                            <input type="text" name="" id="" placeholder="10">
+                        </div>
                     </div>
-                    
-                    <div class="taxt discount1">
-                        <h2>Tax.........</h2>
-                        <input type="text" name="" id="" placeholder="10">
+                    <div class="totalamountbox discount1">
+                        <h2>Total amount</h2>
+                        <input type="text" name="" id="" placeholder="1321323$">
                     </div>
                 </div>
-                <div class="totalamountbox discount1">
-                <h2>Total amount</h2>
-                <input type="text" name="" id="" placeholder="1321323$">
+            </div>
+            <div class="paymentterm">
+                <div class="pay">
+                    <h2>Payment Term</h2>
+                    <input type="text" name="" id="" placeholder="next 14 days">
                 </div>
-            </div>
-        </div>
-        <div class="paymentterm">
-            <div class="pay">
-                <h2>Payment Term</h2>
-                <input type="text" name="" id="" placeholder="next 14 days">
-            </div>
-            <div class="currency">
-                <h2>Currency</h2>
-                <input type="text" name="" id=""  placeholder="PKR">
+                <div class="currency">
+                    <h2>Currency</h2>
+                    <input type="text" name="" id="" placeholder="PKR">
+                </div>
             </div>
         </div>
         <div class="cancel">
@@ -115,4 +149,5 @@
     </div>
     </section>
 </body>
+
 </html>
