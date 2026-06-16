@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0%;
     padding: 0%;
 }
@@ -14,25 +14,27 @@ input{
 }
 section{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     /* background-color: red; */
     display: flex;
     align-items: center;
-    justify-content: center;
-     
+    justify-content: center;     
+    /* flex-wrap: wrap; */
+    margin: 20px;
 }
+
 body{
     font-family:sans-serif ;
 }
 .outermain1{
     width: 15%;
-    height: 90%;
+    height: 90%; 
     /* background-color: blue; */
      display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
    
 
 }
@@ -50,20 +52,21 @@ body{
     padding: 10px;
 }
 .suhal img {
-width: 55%;
-height: 55%;
+width: 20%;
+height: 20%;
 border-radius: 100%;
 }
 
 .companylogo{
     width: 90%;
-    height: 25%;
+    height: 55%;
     display: flex;
     flex-direction: column;
     background-color:rgb(249, 249, 249) ;
     /* text-align: center; */
-    gap: 5px;
-    padding: 10px;
+    gap: 10px;
+    padding: 50px 7px;
+
 }
 .logo {
     display: flex ;
@@ -128,6 +131,8 @@ border-radius: 100%;
     padding: 12px 10px;
 }
 .first{
+    width: 100%;
+    height: 10%;
     display: flex;
     gap: 185px;
     justify-content: center;
@@ -176,7 +181,7 @@ border-radius: 100%;
 }
 .currency{
     display: flex;
-     gap: 100px;
+     gap: 9%;
      justify-content: center;
 
 }
@@ -191,6 +196,7 @@ border-radius: 100%;
     display: flex;
     gap: 185px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .prefix input{
     padding: 8px 40px;
@@ -208,6 +214,7 @@ border-radius: 100%;
     display: flex;
     gap: 130px;
     justify-content: center ;
+    flex-wrap: wrap;
 }
 .due{
     display: flex;
@@ -247,6 +254,7 @@ border-radius: 100%;
     justify-content: center;
     align-items: center;
     gap: 90px;
+    margin: 10px;
 }
 .lastbtns button {
     padding: 11px 45px;
@@ -256,4 +264,75 @@ border-radius: 100%;
 background-color: rgb(254, 102, 9);
 border: none;
 color: white;
+}
+@media (max-width : 1600px) {
+    .first{
+        /* flex-wrap: wrap; */
+         
+    }
+    .outermain2{
+    width: 80%;
+    height: 100%;
+}
+
+.section{
+   flex-direction: column;
+   gap: 150px;
+}
+    
+}
+@media (max-width:1380px) {
+   section{
+    flex-direction: column;
+    width: 90%;
+   }
+   .outermain1{
+    display: flex;
+    height: 50%;
+
+}
+.outermain2{
+    width: 100%;
+}
+.first{
+    gap: 50px;
+
+}
+.second{
+    gap: 10px;
+}
+.second input{
+    padding: 10px 10px;
+}
+.time input{
+    padding: 10px 10px;
+
+}
+.third{
+    gap: 10px;
+}
+.company input{
+    padding: 8px 100px;
+
+}
+.company .time{
+    padding: 8px 100px;
+
+}
+.business input{
+    padding: 8px 100px;
+}
+.cur input{
+ padding: 10px 50px;
+}
+.language input{
+ padding: 10px 50px;
+
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 }
