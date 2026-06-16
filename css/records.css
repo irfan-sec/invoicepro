@@ -92,7 +92,9 @@ gap: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.096);
+    padding: 5px;
+  
     
 }
 .amain{
