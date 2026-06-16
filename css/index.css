@@ -11,9 +11,9 @@ body {
 }
 
 .container {
-    width: 85%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
+    background-color: #0a66c2;
 }
 
 
@@ -47,6 +47,7 @@ body {
 }
 
 .btn-contact {
+
     background: #f97316;
     color: white;
     padding: 10px 20px;
@@ -58,11 +59,16 @@ body {
     background: #ea580c;
     transform: translateY(-2px);
 }
+.hero-section{
+    width: 100%;
+    height: 100%;
+    /* background-color: #0a66c2; */
+}
 
 .hero-container {
     display: flex;
     align-items: center;
-    padding: 80px 0;
+    padding: 80px 220;
     gap: 50px;
 }
 
@@ -78,11 +84,14 @@ body {
 }
 
 .hero-text span {
-    color: #080807;
+    color: #fafa0d;
 }
-
+.span2{
+/* background-color: #10b981; */
+padding-top: 50px;
+}
 .hero-text p {
-    font-size: 18px;
+    font-size: 28px;
     margin-top: 20px;
     color: #64748b;
 }
@@ -94,6 +103,7 @@ body {
 }
 
 .btn-signup {
+    width: 231px;
     background: #f97316;
     color: white;
     padding: 12px 30px;
@@ -109,6 +119,7 @@ body {
 
 
 .btn-login {
+    width: 231px;
     background: #fffbf9;
     color: #1e293b;
     padding: 12px 30px;
@@ -131,7 +142,7 @@ body {
 
 .hero-image img {
     background-color: #160e0e;
-    width: 100%;
+    width: 90%;
     height: 50vh;
 }
 
@@ -394,6 +405,7 @@ body {
 
 
 .sec-1 {
+    /* background-color: #10b981; */
     margin: 60px auto;
     text-align: center;
 }
@@ -435,6 +447,7 @@ body {
 }
 
 .text {
+    /* background-color: #0a66c2; */
     font-size: 22px;
 }
 
@@ -451,11 +464,12 @@ body {
     width: 45px;
     height: 50px;
     border-radius: 50%;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
 }
 
 
 .sec-2 {
+    
     margin: 60px auto;
     text-align: center;
     /* background-color: #ea580c; */
@@ -473,7 +487,7 @@ body {
 }
 
 .div-boxes {
-    /* background-color: #10b981; */
+    background-color: ;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -487,17 +501,9 @@ body {
     border: 1px solid #ddd;
     border-radius: 15px;
     text-align: left;
-    /* background: rgb(199, 55, 55); */
+    background: #faf9f9;
 }
 
-/* . {
-    width: 380px;
-    padding: 30px;
-    border: 2px solid #f97316;
-    border-radius: 15px;
-    text-align: left;
-    background: white;
-} */
 
 .plan-title {
     font-size: 30px;
@@ -545,12 +551,13 @@ body {
 }
 
 .plan-features li i {
+    /* background-color: pink; */
     color: #10b981;
 
 }
 
 button {
-    background-color: ;
+    background-color: chartreuse;
     width: 100%;
     padding: 12px;
     background: white;
@@ -559,7 +566,8 @@ button {
     border: 1px solid #ddd;
     border-radius: 6px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 22px;
 }
 
 .btn-orange {
@@ -574,16 +582,16 @@ button {
 }
 
 .btn-orange:hover {
-    outline: 3px solid #2b84ce;
+    outline: 3px solid #3f79a8;
     outline-offset: 4px;
 }
 
 
 
 .section {
+    /* width: 100%; */
     position: relative;
-    width: 100%;
-    max-width: 1440px;
+    width: 1440px;
     height: 337px;
     margin: 0 auto;
     background-color: #f1f3fd;
@@ -599,7 +607,7 @@ button {
 }
 
 .head-1 {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 700;
     color: #111827;
     margin-top: 0;
@@ -609,7 +617,7 @@ button {
 }
 
 .section-text-top {
-    font-size: 16px;
+    font-size: 36px;
     color: #374151;
     margin-top: 0;
     margin-right: 0;
@@ -620,7 +628,7 @@ button {
 .btn-get-started {
     background-color: #f97316;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     padding-top: 14px;
@@ -639,7 +647,7 @@ button {
 }
 
 .section-subtext {
-    font-size: 14px;
+    font-size: 24px;
     color: #111827;
     margin: 0;
 }
@@ -648,7 +656,7 @@ button {
     position: absolute;
     right: 100px;
     top: 50%;
-    transform: translateY(-50%);
+background-color: oklch(99.542% 0.00652 161.009);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -677,7 +685,7 @@ button {
 
 .footer-container {
     width: 85%;
-    max-width: 1200px;
+    width: 1200px;
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
@@ -695,7 +703,7 @@ button {
 
 .footer-text {
     font-size: 24px;
-    color: #6b7280;
+    color: #101113;
     line-height: 1.6;
 }
 
@@ -716,7 +724,7 @@ button {
 }
 
 .logo-text {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     color: #e96a01;
 }
@@ -750,11 +758,13 @@ button {
 
 .footer-link {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 43px;
     color: #13151a;
-    transition: all 0.3s ease;
+    
 }
-
+h3{
+    font-size: px;
+}
 .footer-link:hover {
     color: #f97316;
 }
@@ -782,6 +792,7 @@ button {
 }
 
 .fb {
+    font-size: 30px;
     background-color: #1877f2;
 }
 
