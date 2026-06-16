@@ -9,7 +9,7 @@
 
 section {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
 }
 
@@ -83,7 +83,7 @@ section {
 
     padding: 15px 190px;
     color: white;
-    background-color: orangered;
+    background-color: #FD690F;
     border: none;
     border-radius: 7px;
 }

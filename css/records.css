@@ -2,15 +2,19 @@
 padding: 0;
 margin: 0;
 
-
+    font-family: 'poppins';
+}
+body{
+    display: flex;
 }
 #records{
-    width: auto;
+    width: 90%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top:  10px;
+
     
 }
 .main{
@@ -20,7 +24,7 @@ margin: 0;
     flex-direction: column;
     align-items: space-between;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
 
 }
 .top{
@@ -87,3 +91,28 @@ gap: 60px;
 .center2 button{
     padding: 10px;
 }
+.a1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgba(0, 0, 0, 0.096);
+    padding: 5px;
+  
+    
+}
+.amain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.three{
+    border: 2px solid black;
+    padding: 1px;
+    border-radius: 10px;
+}
+

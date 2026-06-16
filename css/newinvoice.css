@@ -71,7 +71,7 @@ border-radius: 6px;
 font-size: .8vw;
 } 
 .input2 input::placeholder{
-     color: rgb(254, 102, 9);
+     color:#FD690F;
 
  }
 
@@ -170,11 +170,11 @@ gap: 30px;
     padding: 9px 320px;
     border: 2px solid rgb(254, 102, 9);
     font-size: 1vw;
-    color: rgb(254, 102, 9);
+    color:#FD690F;
     background-color: white;
 }
 .addnew input::placeholder{
-    color:rgb(254, 102, 9) ;
+    color:#FD690F ;
 
 }
 .additionalinfomain{
@@ -308,7 +308,7 @@ gap: 30px;
     
 }
 .cancel #generate{
-    background-color: rgb(254, 102, 9);
+    background-color:#FD690F;
     border-radius: 6px;
     font-size: 1vw;
     color: white;
