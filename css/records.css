@@ -4,8 +4,11 @@ margin: 0;
 
     font-family: 'poppins';
 }
+body{
+    display: flex;
+}
 #records{
-    width: auto;
+    width: 90%;
     height: auto;
     display: flex;
     align-items: center;

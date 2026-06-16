@@ -8,19 +8,63 @@
     <link rel="stylesheet" href="../css/records.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="../css/sidebar.css">
 
 </head>
 
 
 <body>
-    <script>
-  fetch('../component/sidebar.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('ui-container').innerHTML = data;
-    });
-</script>
+     <section>
+        <div class="hero">
+            <div class="sidebar">
+                <div class="barone">
+                    <img src="../assets/logo.png" alt="">
+                    <h1>Invoice Pro</h1>
+                </div>
+                <div class="bartwo">
+                    <ul>
+                        <a href="">
+                            <li><i class="fa-solid fa-house"></i>
+                                <h2>Dashboard</h2>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li><i class="fa-solid fa-plus"></i>
+                                <h2>New Invoice</h2>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li><i class="fa-solid fa-trash-can-arrow-up"></i>
+                                <h2>Recodes</h2>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li><i class="fa-solid fa-user"></i>
+                                <h2>User Profile</h2>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li><i class="fa-solid fa-pen"></i>
+                                <h2>Setting</h2>
+                            </li>
+                        </a>
+
+                    </ul>
+                </div>
+                <div class="barthree">
+                    <div class="procard">
+                        <h2>Upgrade to pro</h2>
+                        <p>Lorem ipsum dolor sit. aia dfadadf</p>
+                        <button>Upgrade To Pro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </section>
+  
 
     <section id="records">
         <div class="main">
@@ -46,9 +90,9 @@
                     <h2>Total 250 Invoices</h2>
                 </div>
                 <div class="center2">
-                    <button>Export PDF</button>
-                    <button>Export Excel</button>
-                    <button>Columns</button>
+                    <button style="border-radius: 10px; background-color: whitesmoke; border: none; color: green;">Export PDF</button>
+                    <button style="border-radius: 10px; background-color: whitesmoke; border: none; color: red ;">Export Excel</button>
+                    <button style="border-radius: 10px; background-color: whitesmoke; border: none; color: blue;">Columns</button>
                 </div>
             </div>
             <div class="three">
