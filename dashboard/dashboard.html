@@ -7,12 +7,62 @@
     <title>dashboard</title>
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.min.js">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="../css/sidebar.css">
 </head>
 
 <body>
     <section id="dashboard_main">
-        <div class="dashboard_sidebar"></div>
+        <div class="dashboard_sidebar">
+              <section>
+        <div class="hero">
+            <div class="sidebar">
+                <div class="barone">
+                    <img src="../assets/logo.png" alt="">
+                    <h1>Invoice Pro</h1>
+                </div>
+                <div class="bartwo">
+                    <ul>
+                        <a href="">
+                            <li><i class="fa-solid fa-house"></i>
+                                <h2>Dashboard</h2>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li><i class="fa-solid fa-plus"></i>
+                                <h2>New Invoice</h2>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li><i class="fa-solid fa-trash-can-arrow-up"></i>
+                                <h2>Recodes</h2>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li><i class="fa-solid fa-user"></i>
+                                <h2>User Profile</h2>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li><i class="fa-solid fa-pen"></i>
+                                <h2>Setting</h2>
+                            </li>
+                        </a>
+
+                    </ul>
+                </div>
+                <div class="barthree">
+                    <div class="procard">
+                        <h2>Upgrade to pro</h2>
+                        <p>Lorem ipsum dolor sit. aia dfadadf</p>
+                        <button>Upgrade To Pro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+        </div>
         <div class="dashboard_body">
             <div class="dashboard_header">
                 <h1>Dashboard</h1>
@@ -34,97 +84,66 @@
                     <i class="fa-solid fa-dollar-sign"></i>
                     <div class="cards_price">
                         <h4>Total Invoice</h4>
-                        <h2>$0</h2>
+                      <h2 id="totalInvoices">0</h2>
                     </div>
                 </div>
                 <div class="card1">
                     <i class="fa-solid fa-dollar-sign" style="background-color: green;"></i>
                     <div class="cards_price">
                         <h4>Paid Invoice</h4>
-                        <h2>$0</h2>
+                       <h2 id="paidInvoices">0</h2>
                     </div>
                 </div>
                 <div class="card1">
                     <i class="fa-regular fa-clock" style="padding: 10px 10px;"></i>
                     <div class="cards_price">
                         <h4>Pending Invoice</h4>
-                        <h2>$0</h2>
+                        <h2 id="pendingInvoices">0</h2>
                     </div>
                 </div>
                 <div class="card1">
                     <i class="fa-solid fa-dollar-sign"></i>
                     <div class="cards_price">
-                        <h4>Total Revenue</h4>
-                        <h2>$0</h2>
+                        <h4>Total Revenue</h4>                    
+                        <h2 id="totalRevenue">$0</h2>
                     </div>
                 </div>
             </div>
             <div class="dashboard_content">
                 <div class="dashboard_content_library">
-                    <div class="content_library_1">
-                        <div>
-                            <canvas id="myChart"></canvas>
-                        </div>
-
-                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-                        <script>
-                            const ctx = document.getElementById('myChart');
-
-                            new Chart(ctx, {
-                                type: 'line',
-                                data: {
-                                    labels: ['Red', 'Blue', 'Yellow', 'Green'],
-                                    datasets: [{
-                                        label: '# of Votes',
-                                        data: [12, 19,8, 5, 2, 3],
-                                        borderWidth: 1
-                                    }]
-                                },
-                                options: {
-                                    scales: {
-                                        y: {
-                                            beginAtZero: true
-                                        }
-                                    }
-                                }
-                            });
-                        </script>
-
-                    </div>
+                   <div class="content_library_1">
+    <canvas id="revenueChart"></canvas>
+</div>
                     <div class="content_library_2">
-                        <div class="content_library_2_1">
-
-
-                        </div>
+                        <div class="content_library_2_1"> </div>
                         <div class="content_library_2_2"></div>
                     </div>
                 </div>
                 <div class="dashboard_invoice_history">
-                    <button class="history_button">
+                    <button class="history_button" id="addInvoiceBtn">
                         <h1>+</h1> AddInvoice
                     </button>
-                    <div class="history_recent_invoices">
-                        <h3>Some Recent Invoices</h3>
+                    <div class="history_recent_invoices" id="invoiceList">
+                        <h3></h3>
                         <div class="history_recent_invoice1">
                             <div class="invoice1_rec_number">
-                                <h4>inv-2026-156</h4>
-                                <h5>Tech Solution</h5>
+                                <h4></h4>
+                                <h5></h5>
                             </div>
                             <div class="invoice1_price"  style="color: orangered;">
-                                <h4>$1245.45</h4>
-                                <h5>PAID</h5>
+                                <h4></h4>
+                                <h5></h5>
                             </div>
                         </div>
                         <hr>
                         <div class="history_recent_invoice1">
                             <div class="invoice1_rec_number">
-                                <h4>inv-2026-156</h4>
-                                <h5>Tech Solution</h5>
+                                <h4></h4>
+                                <h5></h5>
                             </div>
                             <div class="invoice1_price"  style="color: rgb(13, 51, 177);">
-                                <h4>$1245.45</h4>
-                                <h5>PAID</h5>
+                                <h4></h4>
+                                <h5></h5>
                             </div>
                         </div>
                         <hr>
@@ -166,6 +185,8 @@
             </div>
         </div>
     </section>
+      <script src="../js/dashboard.js"></script>
+       <script src="../js/backup.js"></script>
 </body>
 
 </html>
