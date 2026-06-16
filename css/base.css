@@ -5,14 +5,37 @@
 }
 body {
   display: flex;
+  justify-content: center;
 }
 
 .record-page {
   height: 100%;
   width: 70vw;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: right; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.cards-header {
+  height: 10vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 1px;
+  margin-left: 40px;
+  border-bottom: 2px solid;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.profile img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
 .cards {
   height: 50%;
@@ -33,8 +56,8 @@ body {
   border-radius: 8px;
   border: 2px solid gray;
   text-align: center;
-  gap: 10px;
-  padding: 10px 4px;
+  gap: 13px;
+  /* padding: 10px 4px; */
 }
 .card img {
   height: 45px;
@@ -62,7 +85,7 @@ button:hover {
 }
 
 .display-Records {
-  height: 80%;
+  height: 60%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -84,7 +107,7 @@ button:hover {
   border-radius: 5px;
 }
 .record {
-  height: 9.6%;
+  height: 15%;
   width: 100%;
   border-bottom: 1px solid gray;
   /* border-radius: 5px; */

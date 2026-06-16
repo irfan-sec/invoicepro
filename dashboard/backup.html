@@ -13,7 +13,6 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet"
       />
-        <link rel="stylesheet" href="../css/sidebar.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -31,31 +30,31 @@
             </div>
             <div class="bartwo">
               <ul>
-                <a href="">
+                <a href="dashboard.html"  target="_blank">
                   <li>
                     <i class="fa-solid fa-house"></i>
                     <h2>Dashboard</h2>
                   </li>
                 </a>
-                <a href="">
+                <a href="new-invoice.html" target="_blank">
                   <li>
                     <i class="fa-solid fa-plus"></i>
                     <h2>New Invoice</h2>
                   </li>
                 </a>
-                <a href="">
-                  <li>
+                <a href="records.html" target="_blank">
+                  <li> 
                     <i class="fa-solid fa-trash-can-arrow-up"></i>
                     <h2>Recodes</h2>
                   </li>
                 </a>
-                <a href="">
+                <a href="profile.html" target="_blank">
                   <li>
                     <i class="fa-solid fa-user"></i>
                     <h2>User Profile</h2>
                   </li>
                 </a>
-                <a href="">
+                <a href="settings.html" target="_blank">
                   <li>
                     <i class="fa-solid fa-pen"></i>
                     <h2>Setting</h2>
@@ -74,27 +73,44 @@
         </div>
         </div>
     <div id="record-page">
+      <div class="cards-header">
+        <h2>Backups</h2>
+        <div class="profile">
+          <img src="../assets/profile.png" alt="" />
+          <div class="profile-info">
+            <h5>Sameer Abbas</h5>
+            <p>Admin</p>
+            
+          </div>
+          <select name="" id="">
+              <option value="">Option 1</option>
+              <option value="">Option 2</option>
+              <option value="">Option 3</option>
+            </select>
+        </div>
+        
+      </div>
       <div class="cards">
         <div class="card">
-          <img src="../imgs/bakupicon.png" alt="" />
+          <img src="../assets/Backup--Streamline-Sharp-Material-Symbols.png" alt="" />
           <h3>Create Backup</h3>
           <p>Generate a new backup of all your data</p>
           <button><b>Create Backup</b></button>
         </div>
         <div class="card">
-          <img src="../imgs/downlodbtn.png" alt="" />
+          <img src="../assets/Download-Bottom--Streamline-Ultimate.png" alt="" />
           <h3>Downoad Backups</h3>
           <p>Download your existing backup files</p>
           <button><b>Download</b></button>
         </div>
         <div class="card">
-          <img src="../imgs/historyicon.png" alt="" />
+          <img src="../assets/History--Streamline-Rounded-Streamline-Material.png" alt="" />
           <h3>Restore Backups</h3>
           <p>Restore your data form a backups files</p>
           <button><b>Restore Data</b></button>
         </div>
         <div class="card">
-          <img src="../imgs/historyicon.png" alt="" />
+          <img src="../assets/History--Streamline-Rounded-Streamline-Material.png" alt="" />
           <h3>Backups History</h3>
           <p>View and manage your backups histroy</p>
           <button><b>View History</b></button>
@@ -119,73 +135,45 @@
               <div>Completed</div>
             </div>
             <div class="record">
-              <div class="num">1</div>
+              <div class="num">2</div>
               <div>Backup_Jun_06_2026.zip</div>
               <div>06 Jun 2026, 09:30 AM</div>
               <div>12.4 MB</div>
               <div>Completed</div>
             </div>
             <div class="record">
-              <div class="num">1</div>
+              <div class="num">3</div>
               <div>Backup_Jun_06_2026.zip</div>
               <div>06 Jun 2026, 09:30 AM</div>
               <div>12.4 MB</div>
               <div>Completed</div>
             </div>
             <div class="record">
-              <div class="num">1</div>
+              <div class="num">4</div>
               <div>Backup_Jun_06_2026.zip</div>
               <div>06 Jun 2026, 09:30 AM</div>
               <div>12.4 MB</div>
               <div>Completed</div>
             </div>
             <div class="record">
-              <div class="num">1</div>
-              <div>Backup_Jun_06_2026.zip</div>
-              <div>06 Jun 2026, 09:30 AM</div>
-              <div>12.4 MB</div>
-              <div>Completed</div>
-            </div>
-            <div class="record">
-              <div class="num">1</div>
-              <div>Backup_Jun_06_2026.zip</div>
-              <div>06 Jun 2026, 09:30 AM</div>
-              <div>12.4 MB</div>
-              <div>Completed</div>
-            </div>
-            <div class="record">
-              <div class="num">1</div>
-              <div>Backup_Jun_06_2026.zip</div>
-              <div>06 Jun 2026, 09:30 AM</div>
-              <div>12.4 MB</div>
-              <div>Completed</div>
-            </div>
-            <div class="record">
-              <div class="num">1</div>
-              <div>Backup_Jun_06_2026.zip</div>
-              <div>06 Jun 2026, 09:30 AM</div>
-              <div>12.4 MB</div>
-              <div>Completed</div>
-            </div>
-            <div class="record">
-              <div class="num">1</div>
+              <div class="num">5</div>
               <div>Backup_Jun_06_2026.zip</div>
               <div>06 Jun 2026, 09:30 AM</div>
               <div>12.4 MB</div>
               <div>Completed</div>
             </div>
           </div>
-          <div
+           <div
             style="
               display: flex;
               justify-content: center;
               align-items: center;
-              margin-top: 20px;
+              margin-top: 10px;
             "
           >
-            <button style="width: 50%">View All</button>
+            <button style="width: 50%; background-color: #fa620d; color: #fff;">View All</button>
           </div>
-        </div>
+        </div>  
       </div>
     </div>
 
