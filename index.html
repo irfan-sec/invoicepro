@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvoicePro Landing Page</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <div style="font-size: 24px; font-weight: bold;" class="logo"> <i></i> Invoice Pro</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">Performance</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn-contact">Contact us</a>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1>Create Professional <span>Invoice</span> In Seconds</h1>
+                <p style="font-size: 20px;">Generate, send, and manage invoices, clients, payments <br> and reports from
+                    one simple dashboard</p>
+                <div class="hero-btns">
+                    <button class="btn-signup">Sign Up</button>
+                    <button class="btn-login">Log In</button>
+                </div>
+                <div style="margin-top: 20px;gap: 45px; display: flex; margin-left: 20px; border:20px ;">
+                    <span><i><svg width="67" height="67" viewBox="0 0 67 67" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="67" height="67" rx="33.5" fill="#FA731E" fill-opacity="0.37" />
+                                <path
+                                    d="M51.4097 22H28.713C26.7926 22 25.2213 23.5713 25.2213 25.4919V41.2052C25.2213 42.1313 25.5891 43.0195 26.244 43.6744C26.8988 44.3292 27.787 44.6971 28.713 44.6971H51.4097C53.3476 44.6971 54.9014 43.1432 54.9014 41.2052V25.4919C54.9014 24.5658 54.5336 23.6776 53.8787 23.0227C53.2239 22.3679 52.3357 22 51.4097 22ZM51.4097 41.2052H28.713V28.4076L40.0613 34.2215L51.4097 28.4076V41.2052ZM40.0613 31.2709L28.713 25.4919H51.4097L40.0613 31.2709ZM21.7295 41.2052C21.7295 41.502 21.7818 41.7814 21.8168 42.0782H14.7459C13.7822 42.0782 13 41.2925 13 40.3323C13 39.372 13.7822 38.5863 14.7459 38.5863H21.7295V41.2052ZM18.2377 24.6189H21.8168C21.7818 24.9157 21.7295 25.1951 21.7295 25.4919V28.1108H18.2377C17.2774 28.1108 16.4918 27.3251 16.4918 26.3648C16.4918 25.4046 17.2774 24.6189 18.2377 24.6189ZM14.7459 33.3485C14.7459 32.3883 15.5315 31.6026 16.4918 31.6026H21.7295V35.0945H16.4918C15.5315 35.0945 14.7459 34.3088 14.7459 33.3485Z"
+                                    fill="#FA731E" />
+                            </svg>
+                        </i> Fast setup</span>
+                    <span><i><svg width="67" height="67" viewBox="0 0 67 67" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="67" height="67" rx="33.5" fill="#FA731E" fill-opacity="0.37" />
+                                <path
+                                    d="M34.4709 39.0844C33.6441 39.0844 32.8511 38.754 32.2664 38.166C31.6817 37.578 31.3532 36.7804 31.3532 35.9488C31.3532 34.2086 32.7406 32.8133 34.4709 32.8133C35.2978 32.8133 36.0908 33.1436 36.6755 33.7317C37.2602 34.3197 37.5887 35.1172 37.5887 35.9488C37.5887 36.7804 37.2602 37.578 36.6755 38.166C36.0908 38.754 35.2978 39.0844 34.4709 39.0844ZM43.8241 43.7877V28.11H25.1177V43.7877H43.8241ZM43.8241 24.9744C44.651 24.9744 45.444 25.3048 46.0287 25.8928C46.6134 26.4808 46.9419 27.2784 46.9419 28.11V43.7877C46.9419 44.6193 46.6134 45.4168 46.0287 46.0049C45.444 46.5929 44.651 46.9233 43.8241 46.9233H25.1177C24.2909 46.9233 23.4979 46.5929 22.9132 46.0049C22.3285 45.4168 22 44.6193 22 43.7877V28.11C22 26.3697 23.3874 24.9744 25.1177 24.9744H26.6766V21.8389C26.6766 19.7599 27.4978 17.766 28.9595 16.296C30.4212 14.8259 32.4037 14 34.4709 14C35.4945 14 36.508 14.2028 37.4537 14.5967C38.3993 14.9906 39.2586 15.568 39.9824 16.296C40.7061 17.0239 41.2803 17.888 41.672 18.8391C42.0637 19.7901 42.2653 20.8095 42.2653 21.8389V24.9744H43.8241ZM34.4709 17.1355C33.2306 17.1355 32.0411 17.6311 31.1641 18.5131C30.287 19.3952 29.7943 20.5915 29.7943 21.8389V24.9744H39.1475V21.8389C39.1475 20.5915 38.6548 19.3952 37.7778 18.5131C36.9008 17.6311 35.7112 17.1355 34.4709 17.1355Z"
+                                    fill="#FA731E" />
+                            </svg>
+                        </i> Secure Backup</span>
+                    <span><i><svg width="67" height="67" viewBox="0 0 67 67" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="67" height="67" rx="33.5" fill="#FA731E" fill-opacity="0.37" />
+                                <path
+                                    d="M28.9791 46.9372H37.9581M28.9791 46.9372V39.4547M28.9791 46.9372H20.8979C20.6598 46.9372 20.4314 46.8426 20.263 46.6742C20.0946 46.5058 20 46.2774 20 46.0393V40.3526C20 40.1144 20.0946 39.886 20.263 39.7176C20.4314 39.5493 20.6598 39.4547 20.8979 39.4547H28.9791M37.9581 46.9372V28.9791M37.9581 46.9372H46.0393C46.2774 46.9372 46.5058 46.8426 46.6742 46.6742C46.8426 46.5058 46.9372 46.2774 46.9372 46.0393V20.8979C46.9372 20.6598 46.8426 20.4314 46.6742 20.263C46.5058 20.0946 46.2774 20 46.0393 20H38.856C38.6179 20 38.3895 20.0946 38.2211 20.263C38.0527 20.4314 37.9581 20.6598 37.9581 20.8979V28.9791M28.9791 39.4547V29.877C28.9791 29.6388 29.0737 29.4105 29.2421 29.2421C29.4105 29.0737 29.6388 28.9791 29.877 28.9791H37.9581"
+                                    stroke="#FA731E" stroke-width="1.5" />
+                            </svg>
+                        </i> Easy Reports</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="" alt="invoice image">
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <h2 class="section-title">Powerful Features to Grow Your Business</h2>
+
+        <div class="features-container">
+            <div class="feature-item">
+                <i><svg width="29" height="37" viewBox="0 0 29 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.1861 8.37133H8.24496M20.1861 16.4585H8.24496M20.1861 24.5456H12.2254M0.28418 0.28418H28.1469V36.6763L26.093 34.8891C25.3716 34.261 24.4529 33.9158 23.5028 33.9158C22.5527 33.9158 21.634 34.261 20.9126 34.8891L18.8587 36.6763L16.8068 34.8891C16.0853 34.2605 15.1661 33.9149 14.2156 33.9149C13.265 33.9149 12.3459 34.2605 11.6243 34.8891L9.57242 36.6763L7.51854 34.8891C6.79715 34.261 5.87839 33.9158 4.9283 33.9158C3.97821 33.9158 3.05946 34.261 2.33806 34.8891L0.28418 36.6763V0.28418Z" stroke="#FA731E" stroke-width="0.568627" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</i>
+                <h3>Invoice</h3>
+                <p>Create and send professional invoices in seconded</p>
+            </div>
+
+            <div class="feature-item">
+                <i><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 28.6131C0.75 26.5018 1.58872 24.4769 3.08166 22.984C4.5746 21.4911 6.59945 20.6523 8.71078 20.6523H24.6324C26.7437 20.6523 28.7685 21.4911 30.2615 22.984C31.7544 24.4769 32.5931 26.5018 32.5931 28.6131C32.5931 29.6688 32.1738 30.6812 31.4273 31.4277C30.6808 32.1742 29.6684 32.5935 28.6127 32.5935H4.73039C3.67473 32.5935 2.6623 32.1742 1.91583 31.4277C1.16936 30.6812 0.75 29.6688 0.75 28.6131Z" stroke="#FA731E" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M16.6718 12.6912C19.9692 12.6912 22.6423 10.0181 22.6423 6.72059C22.6423 3.42312 19.9692 0.75 16.6718 0.75C13.3743 0.75 10.7012 3.42312 10.7012 6.72059C10.7012 10.0181 13.3743 12.6912 16.6718 12.6912Z" stroke="#FA731E" stroke-width="1.5"/>
+</svg>
+</i>
+                <h3>Client</h3>
+                <p>Manage your clients and tracks their history easily.</p>
+            </div>
+
+            <div class="feature-item">
+                <i></i>
+                <h3>Backups</h3>
+                <p>Secure cloud Backups for your important data </p>
+            </div>
+
+            <div class="feature-item">
+                <a href=""></a>
+                <i></i>
+                <h3>Reports</h3>
+                <p>Get detailed insights and financial reports</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <h2>How it work</h2>
+        <div class="work-container">
+            <div class="work-step">
+                <div class="work-icon-purple">
+                    <i><svg width="40" height="52" viewBox="0 0 40 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M28.1413 11.6175H11.427M28.1413 22.9508H11.427M28.1413 34.2842H16.9985M0.28418 0.28418H39.2842V51.2842L36.4093 48.7795C35.3996 47.8993 34.1136 47.4155 32.7837 47.4155C31.4539 47.4155 30.1679 47.8993 29.1581 48.7795L26.2833 51.2842L23.4112 48.7795C22.4012 47.8986 21.1147 47.4143 19.7842 47.4143C18.4537 47.4143 17.1671 47.8986 16.1572 48.7795L13.2851 51.2842L10.4103 48.7795C9.4005 47.8993 8.1145 47.4155 6.78464 47.4155C5.45479 47.4155 4.16879 47.8993 3.15904 48.7795L0.28418 51.2842V0.28418Z"
+                                stroke="#000096" stroke-width="0.568627" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </i>
+                </div>
+                <h3>Create invoice</h3>
+                <p>Create professional invoice in less than a minutes</p>
+            </div>
+
+            <div class="work-arrow"></div>
+
+            <div class="work-step">
+                <div class="work-icon-orange">
+                    <i><svg width="112" height="112" viewBox="0 0 112 112" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="56" cy="56" r="56" fill="#FFE9DB" />
+                            <path
+                                d="M28 75.375C28 71.8609 29.396 68.4907 31.8808 66.0058C34.3657 63.521 37.7359 62.125 41.25 62.125H67.75C71.2641 62.125 74.6343 63.521 77.1192 66.0058C79.604 68.4907 81 71.8609 81 75.375C81 77.1321 80.302 78.8172 79.0596 80.0596C77.8172 81.302 76.1321 82 74.375 82H34.625C32.8679 82 31.1828 81.302 29.9404 80.0596C28.698 78.8172 28 77.1321 28 75.375Z"
+                                stroke="#FA731E" stroke-width="1.5" stroke-linejoin="round" />
+                            <path
+                                d="M54.5 48.875C59.9883 48.875 64.4375 44.4258 64.4375 38.9375C64.4375 33.4492 59.9883 29 54.5 29C49.0117 29 44.5625 33.4492 44.5625 38.9375C44.5625 44.4258 49.0117 48.875 54.5 48.875Z"
+                                stroke="#FA731E" stroke-width="1.5" />
+                        </svg>
+                    </i>
+                </div>
+                <h3>Send to Client</h3>
+                <p>Send invoice to your clients via email in one clicks</p>
+            </div>
+
+            <div class="work-arrow"></div>
+
+            <div class="work-step">
+                <div class="work-icon-green">
+                    <i><svg width="112" height="112" viewBox="0 0 112 112" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="56" cy="56" r="56" fill="#EDF9F2" />
+                            <path
+                                d="M56 82C52.4033 82 49.0233 81.3171 45.86 79.9512C42.6967 78.5853 39.945 76.7333 37.605 74.395C35.265 72.0567 33.4129 69.3051 32.0488 66.14C30.6847 62.9749 30.0017 59.5949 30 56C29.9983 52.4051 30.6812 49.0251 32.0488 45.86C33.4164 42.6949 35.2685 39.9433 37.605 37.605C39.9415 35.2667 42.6932 33.4147 45.86 32.0488C49.0268 30.6829 52.4068 30 56 30C59.5932 30 62.9732 30.6829 66.14 32.0488C69.3068 33.4147 72.0584 35.2667 74.395 37.605C76.7315 39.9433 78.5844 42.6949 79.9538 45.86C81.3231 49.0251 82.0052 52.4051 82 56C81.9948 59.5949 81.3118 62.9749 79.9512 66.14C78.5905 69.3051 76.7384 72.0567 74.395 74.395C72.0515 76.7333 69.2998 78.5862 66.14 79.9538C62.9801 81.3214 59.6001 82.0035 56 82ZM56 76.8C61.8066 76.8 66.725 74.785 70.755 70.755C74.785 66.725 76.8 61.8067 76.8 56C76.8 50.1933 74.785 45.275 70.755 41.245C66.725 37.215 61.8066 35.2 56 35.2C50.1933 35.2 45.275 37.215 41.245 41.245C37.215 45.275 35.2 50.1933 35.2 56C35.2 61.8067 37.215 66.725 41.245 70.755C45.275 74.785 50.1933 76.8 56 76.8ZM57.5288 73.5162C57.9829 73.0621 58.21 72.5317 58.21 71.925V70.95C60.3766 70.56 62.24 69.715 63.8 68.415C65.36 67.115 66.14 65.1867 66.14 62.63C66.14 60.81 65.62 59.1417 64.58 57.625C63.54 56.1083 61.46 54.7867 58.34 53.66C55.74 52.7933 53.9417 52.035 52.945 51.385C51.9483 50.735 51.45 49.8467 51.45 48.72C51.45 47.5933 51.8513 46.705 52.6538 46.055C53.4563 45.405 54.6151 45.08 56.13 45.08C56.9967 45.08 57.755 45.2317 58.405 45.535C59.055 45.8383 59.5966 46.25 60.03 46.77C60.4633 47.29 60.9512 47.6471 61.4938 47.8412C62.0363 48.0353 62.545 48.0249 63.02 47.81C63.67 47.55 64.1146 47.1054 64.3538 46.4762C64.593 45.847 64.5384 45.2733 64.19 44.755C63.4966 43.7583 62.6412 42.9133 61.6238 42.22C60.6063 41.5267 59.5117 41.1367 58.34 41.05V40.075C58.34 39.4683 58.1129 38.9379 57.6588 38.4838C57.2046 38.0297 56.6734 37.8017 56.065 37.8C55.4566 37.7983 54.9262 38.0262 54.4738 38.4838C54.0214 38.9414 53.7935 39.4718 53.79 40.075V41.05C51.6233 41.5267 49.9333 42.48 48.72 43.91C47.5067 45.34 46.9 46.9433 46.9 48.72C46.9 50.7567 47.4963 52.4033 48.6888 53.66C49.8813 54.9167 51.7551 56 54.31 56.91C57.04 57.9067 58.9363 58.795 59.9988 59.575C61.0613 60.355 61.5917 61.3733 61.59 62.63C61.59 64.06 61.0812 65.1113 60.0638 65.7838C59.0463 66.4563 57.8217 66.7917 56.39 66.79C55.2633 66.79 54.245 66.5196 53.335 65.9788C52.425 65.438 51.6667 64.6251 51.06 63.54C50.7133 62.9333 50.2583 62.5217 49.695 62.305C49.1317 62.0883 48.5683 62.0883 48.005 62.305C47.3983 62.5217 46.9537 62.9333 46.6712 63.54C46.3887 64.1467 46.3783 64.7317 46.64 65.295C47.3333 66.7683 48.265 67.9713 49.435 68.9038C50.605 69.8363 52.0133 70.4751 53.66 70.82V71.925C53.66 72.5317 53.8879 73.0629 54.3438 73.5188C54.7997 73.9747 55.3301 74.2017 55.935 74.2C56.5399 74.1983 57.0712 73.9712 57.5288 73.5188"
+                                fill="#467E5D" />
+                        </svg>
+                    </i>
+                </div>
+                <h3>Get Paid</h3>
+                <p>Get paid faster and track Payment easliy</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class=" icon-blue">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+                <div class="stat-text">
+                    <h3>50K+</h3>
+                    <p>Invoices Generated</p>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <div class="icon-circle icon-orange">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="stat-text">
+                    <h3 style="font-weight: 34px;">10K+</h3>
+                    <p>Active Users</p>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <div class="icon-circle icon-purple">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="stat-text">
+                    <h3>10K+</h3>
+                    <p>Active Users</p>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <div class="icon-circle icon-green">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="stat-text">
+                    <h3>10K+</h3>
+                    <p>Active Users</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-1">
+        <h2 class="title">What our User Says</h2>
+        <p class="second-title">Trusted by thousands of freelancer and business</p>
+
+        <div class="row">
+            <div class="card">
+                <div style="font-size: 40px;" class="stars">★★★★★</div>
+                <p class="text">The best invoice software in used. Simple, professional and packed</p>
+                <div class="user">
+                    <img src="user.jpg" alt="user">
+                    <p>Micheel Brown</p>
+                </div>
+            </div>
+            <div class="card">
+                <div style="font-size: 40px;" class="stars">★★★★★</div>
+                <p class="text">The best invoice software in used. Simple, professional and packed</p>
+                <div class="user">
+                    <img src="user.jpg" alt="user">
+                    <p>Emity Davis</p>
+                </div>
+            </div>
+            <div class="card">
+                <div style="font-size: 40px;" class="stars">★★★★★</div>
+                <p class="text">Mazedd has made invoicing so easy! I save so much time and get paid faster.</p>
+                <div class="user">
+                    <img src="user.jpg" alt="user">
+                    <p>Jason Connely</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-2">
+        <h2 class="heading">Ready to Simplify Your Invoicing?</h2>
+        <p class="para">Join 100,000+ businesses and freelancers who trust amazed. </p>
+        <div class="container div-boxes">
+            <div class="box">
+                <span class="plan-title">Starter</span>
+                <div class="price">$0 <span>/ Month</span></div>
+                <p class="plan-desc">Forever Free</p>
+                <ul class="plan-features">
+                    <li><i class="fa-solid fa-check"><svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.04655 4.6025L0 7.43619L4.77529 12.3951L6.82184 10.2699L14.1684 2.47717L12.7516 0L4.77529 8.14461L2.04655 4.6025Z"
+                                    fill="#359ABF" />
+                            </svg>
+                        </i>Invoice /month</li>
+                    <li><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.04655 4.6025L0 7.43619L4.77529 12.3951L6.82184 10.2699L14.1684 2.47717L12.7516 0L4.77529 8.14461L2.04655 4.6025Z"
+                                fill="#359ABF" />
+                        </svg>
+                        </i> Basic Features</li>
+                    <li><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.04655 4.6025L0 7.43619L4.77529 12.3951L6.82184 10.2699L14.1684 2.47717L12.7516 0L4.77529 8.14461L2.04655 4.6025Z"
+                                fill="#359ABF" />
+                        </svg>
+                        </i>PDF Export</li>
+                    <li><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.04655 4.6025L0 7.43619L4.77529 12.3951L6.82184 10.2699L14.1684 2.47717L12.7516 0L4.77529 8.14461L2.04655 4.6025Z"
+                                fill="#359ABF" />
+                        </svg>
+                        </i> Email Support</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+
+            <div class="box">
+                <span class="plan-title">Professional</span>
+                <div class="price">$9 <span>/ Month</span></div>
+                <p class="plan-desc">Billed annually</p>
+                <ul class="plan-features">
+                    <li><i class="fa-solid fa-check"></i> Unlimited Invoice</li>
+                    <li><i class="fa-solid fa-check"></i>All Features </li>
+                    <li><i class="fa-solid fa-check"></i> Reports & analytics</li>
+                    <li><i class="fa-solid fa-check"></i> Priority Support</li>
+                </ul>
+                <button class="btn-orange">Get Started</button>
+            </div>
+
+            <div class="box">
+                <span class="plan-title">Business</span>
+                <div class="price">$29 <span>/ Month</span></div>
+                <p class="plan-desc">Billed annually</p>
+                <ul class="plan-features">
+                    <li><i class="fa-solid fa-check"></i> Everything in Pro</li>
+                    <li><i class="fa-solid fa-check"></i> Team Members</li>
+                    <li><i class="fa-solid fa-check"></i> Custom Branding</li>
+                    <li><i class="fa-solid fa-check"></i> Dedicated Support</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="head-1">Ready to Simplify Your Invoicing?</h2>
+        <p class="section-text-top">Join 100,000+ businesses and freelancers who trust amazed.</p>
+        <a href="#" class="btn-get-started">Get Started Free</a>
+        <p class="section-subtext">No credit card required + Free forever</p>
+        <div class="cloud-cart-icons">
+            <i class="fa-solid fa-cloud-arrow-up cloud-icon"></i>
+            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon">N</span>
+                    <span class="logo-text">Invoice Pro</span>
+                </div>
+                <p class="footer-text">The simple and powerful Invoicing solution for freelancers and businesses.</p>
+            </div>
+
+            <div class="footer-links-column">
+                <h4 class="footer-heading">Product</h4>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="#" class="footer-link">Features</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Pricing</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Invoices</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Reports</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <h4 class="footer-heading">Company</h4>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="#" class="footer-link">About Us</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Careers</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <h4 class="footer-heading">Support</h4>
+                <ul class="footer-list">
+                    <li style="font-size: 34px;" class="footer-list-item"><a href="#" class="footer-link">Help
+                            Center</a></li>
+                    <li style="font-size: 34px;" class="footer-list-item"><a href="#" class="footer-link">Terms of
+                            Service</a></li>
+                    <li style="font-size: 34px;" class="footer-list-item"><a href="#" class="footer-link">Privacy
+                            Policy</a></li>
+                    <li style="font-size: 34px;" class="footer-list-item"><a href="#" class="footer-link">Refund Policy
+                            Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon fb"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon tweeter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon linkrdin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
