@@ -116,7 +116,7 @@ gap: 30px;
     height: 35%;
     display: flex;
     /* justify-content: center; */
-    align-items: left;
+    align-items: flex-start;
     padding-left: 40px;
     flex-direction: column;
     /* background-color: red; */
@@ -138,7 +138,7 @@ gap: 30px;
 .item ul{
     list-style: none;
     display: flex;
-    gap: 200px;
+    gap: 80px;
     display: flex;
     background-color: rgba(180, 180, 180, 0.559);
     height: 15%;
@@ -154,10 +154,10 @@ gap: 30px;
     display:flex;
     justify-content: center;
     /* align-items: center; */
-        gap: 37px;
+        gap: 16px;
 }
 .iteminput input{
-    padding: 16px 10px;
+    padding: 12px 10px;
     display: flex;
     text-align: center  ;
 }
@@ -167,7 +167,9 @@ gap: 30px;
     justify-content: center;
 }
 .addnew button{
-    padding: 9px 320px;
+    width: 100%;
+    max-width: 900px;
+    padding: 9px 12px;
     border: 2px solid rgb(254, 102, 9);
     font-size: 1vw;
     color:#FD690F;
@@ -224,6 +226,13 @@ gap: 30px;
  border-radius: 8px; 
  /* background-color: ; */
 }
+.b1 .h2 textarea{
+   width: 100%;
+   border: none;
+   outline: none;
+   resize: vertical;
+   min-height: 80px;
+}
 .discount{
     display: flex;
     align-items: center;
@@ -259,6 +268,34 @@ gap: 30px;
 .totalamountbox{
     display: flex;
     flex-direction: column;
+}
+.item-row .line-subtotal{
+    background-color: #f4f4f4;
+}
+.item-row .remove-item{
+    border: 1px solid #FD690F;
+    background-color: #fff;
+    color: #FD690F;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+.previewbox{
+    width: 95%;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 14px;
+}
+.previewbox table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+.previewbox th,
+.previewbox td{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 6px 8px;
+    text-align: left;
 }
 .paymentterm{
     width: 95%;
@@ -313,6 +350,14 @@ gap: 30px;
     font-size: 1vw;
     color: white;
     border: none;
+}
+.cancel #printInvoice{
+    background-color: rgb(31, 31, 31);
+    border-radius: 6px;
+    font-size: 1vw;
+    color: white;
+    border: none;
+    padding: 18px 70px;
 }
 #cancel{
     padding: 18px 70px;
