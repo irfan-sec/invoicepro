@@ -8,6 +8,12 @@ const pendingInvoices = document.getElementById("pendingInvoices");
 const totalRevenue = document.getElementById("totalRevenue");
 const invoiceList = document.getElementById("invoiceList");
 const addInvoiceBtn = document.getElementById("addInvoiceBtn");
+const escapeHTML = (value) => String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 
 // Save Data
 function saveData() {
@@ -55,13 +61,13 @@ function renderInvoices() {
         div.innerHTML = `
         
         <div class="invoice1_rec_number">
-            <h4>${invoice.id}</h4>
-            <h5>${invoice.client}</h5>
+            <h4>${escapeHTML(invoice.id)}</h4>
+            <h5>${escapeHTML(invoice.client)}</h5>
         </div>
 
         <div class="invoice1_price">
             <h4>$${(parseFloat(invoice.amount) || 0).toFixed(2)}</h4>
-            <h5>${invoice.status}</h5>
+            <h5>${escapeHTML(invoice.status)}</h5>
         </div>
 
         `;
