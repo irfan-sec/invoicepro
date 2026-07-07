@@ -118,4 +118,36 @@ ul a:hover{
 
 }
 
+@media (max-width: 900px) {
+    .sidebar {
+        gap: 20px;
+        padding: 16px;
+    }
 
+    .bartwo ul {
+        width: 100%;
+        gap: 12px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    ul li {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .barthree {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .bartwo ul {
+        grid-template-columns: 1fr;
+    }
+
+    .procard {
+        width: 100%;
+    }
+}

@@ -821,3 +821,100 @@ h3{
     color: #9ca3af;
     margin: 0;
 }
+
+@media (max-width: 1024px) {
+    .hero-container {
+        padding: 48px 24px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-btns {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .features-container,
+    .work-container,
+    .stats-container,
+    .div-boxes,
+    .sec-1 .row {
+        width: min(94%, 1000px);
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .section {
+        width: 94%;
+        height: auto;
+        padding: 36px 20px;
+    }
+
+    .footer-container {
+        width: 94%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav-links {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .btn-signup,
+    .btn-login {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .feature-item h3,
+    .section-title,
+    .footer-heading {
+        font-size: 26px;
+    }
+
+    .feature-item p,
+    .work-step p,
+    .plan-features li,
+    .section-subtext,
+    .footer-text {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 30px;
+    }
+
+    .section-text-top {
+        font-size: 24px;
+    }
+
+    .cloud-cart-icons {
+        display: none;
+    }
+
+    .footer-list-item,
+    .footer-link {
+        font-size: 18px;
+    }
+}

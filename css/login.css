@@ -11,7 +11,7 @@
 
 section {
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   display: flex;
 }
 
@@ -80,10 +80,12 @@ section {
   background-color: orangered;
   border: none;
   border-radius: 7px;
+  max-width: 100%;
 }
 
 .email input {
   width: 60%;
+  max-width: 100%;
   height: 40px;
   border-radius: 7px;
   border: 3px solid rgba(128, 128, 128, 0.76);
@@ -93,6 +95,7 @@ section {
 
 .password input {
   width: 60%;
+  max-width: 100%;
   height: 40px;
   border-radius: 7px;
   border: 3px solid rgba(128, 128, 128, 0.76);
@@ -102,6 +105,7 @@ section {
 
 .confirm input {
   width: 60%;
+  max-width: 100%;
   height: 40px;
   border-radius: 7px;
   border: 3px solid rgba(128, 128, 128, 0.76);
@@ -131,4 +135,63 @@ section {
 
 input.checkbox {
   padding: 0px;
+}
+
+@media (max-width: 992px) {
+  section {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .mainleft {
+    align-items: center;
+    text-align: center;
+  }
+
+  .mainright {
+    width: min(92%, 640px);
+    margin: 20px auto;
+  }
+
+  .innerright {
+    margin: 24px;
+  }
+
+  .email input,
+  .password input,
+  .confirm input,
+  .create button {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .buttons button {
+    flex: 1;
+    min-width: 160px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainleft img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .innerright {
+    margin: 18px;
+  }
+
+  .agree {
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
