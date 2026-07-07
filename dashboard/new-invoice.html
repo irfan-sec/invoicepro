@@ -24,10 +24,7 @@
                     </div>
                     <div class="input">
                         <div class="input input1">
-                            <input type="text" placeholder="ABCD">
-                        </div>
-                        <div class="input button">
-                            <button>+ Add Client</button>
+                            <input id="clientName" name="clientName" type="text" placeholder="ABCD">
                         </div>
                     </div>
                 </div>
@@ -37,16 +34,16 @@
                         <h2>Invoice Number</h2>
                     </div>
                     <div class="b2input">
-                        <input type="text" placeholder="abcdefg">
+                        <input id="invoiceNumber" name="invoiceNumber" type="text" placeholder="INV-2026-001">
                     </div>
                     <div class="date">
                         <div class="issue">
                             <h2>Issue Date</h2>
-                            <input type="text" name="" id="" part="1/1/2026" placeholder="1/1/2026">
+                            <input id="issueDate" name="issueDate" type="date">
                         </div>
                         <div class="duedate">
-                            <h2>Issue Date</h2>
-                            <input type="text" name="" id="" placeholder="1/2/2026">
+                            <h2>Due Date</h2>
+                            <input id="dueDate" name="dueDate" type="date">
                         </div>
                     </div>
                 </div>
@@ -61,93 +58,74 @@
                         <li>Descriptions</li>
                         <li>QTY</li>
                         <li>Amounts</li>
+                        <li>Subtotal</li>
+                        <li>Action</li>
                     </ul>
-                    <div class="iteminput">
-                        <input type="text" name="" id="" placeholder="Webdesign">
-                        <input type="text" name="" id="" placeholder="Redesign">
-                        <input type="text" name="" id="" placeholder="1">
-                        <input type="text" name="" id="" placeholder="10$">
+                    <div id="lineItems">
+                        <div class="iteminput item-row">
+                            <input class="item-name" type="text" placeholder="Webdesign">
+                            <input class="item-description" type="text" placeholder="Redesign">
+                            <input class="item-qty" type="number" min="0" step="1" placeholder="1">
+                            <input class="item-price" type="number" min="0" step="0.01" placeholder="10.00">
+                            <input class="line-subtotal" type="text" value="0.00" readonly>
+                            <button class="remove-item" type="button" aria-label="Remove item">Remove</button>
+                        </div>
                     </div>
                     <div class="addnew">
-                        <button>+ Add New </button>
+                        <button id="addLineItem" type="button">+ Add New </button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main2">
-     <div class="h1" style="text-align: left;">
-        <h1>Item/Service</h1>
-     </div>
-     <div class="item">
-      <ul>
-        <li>Item</li>
-        <li>Descriptions</li>
-        <li>QTY</li>
-        <li>Amounts</li>
-      </ul>
-      <div class="iteminput">
-         <input type="text" name="" id="" placeholder="Webdesign">
-         <input type="text" name="" id="" placeholder="Redesign">
-         <input type="text" name="" id="" placeholder="1">
-         <input type="text" name="" id="" placeholder="10$">
-      </div>
-      <div class="addnew">
-       <button>   +   Add  New </button>
-      </div>
-     </div>
-        </div>
         <div class="additionalinfomain">
             <div class="b b1">
                 <h2>Additional info..</h2>
                 <div class="h2">
-                    <h2>Thankyou</h2>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Thank you"></textarea>
                 </div>
             </div>
             <div class=" b2">
                 <div class="discountbox">
                     <div class="h2">
-                        <h2>Thankyou</h2>
+                        <h2>Totals</h2>
                     </div>
-                </div>
-                <div class=" b2">
-                    <div class="discountbox">
-                        <div class="h2">
-                            <h2>Total</h2>
-                        </div>
-
-                        <div class="discount discount1">
-                            <h2>Discount</h2>
-                            <input type="text" name="" id="" placeholder="5">
-                        </div>
-
-                        <div class="taxt discount1">
-                            <h2>Tax.........</h2>
-                            <input type="text" name="" id="" placeholder="10">
-                        </div>
+                    <div class="discount discount1">
+                        <h2>Subtotal</h2>
+                        <input id="subtotalAmount" type="text" value="0.00" readonly>
+                    </div>
+                    <div class="discount discount1">
+                        <h2>Discount (%)</h2>
+                        <input id="discountInput" type="number" min="0" step="0.01" placeholder="5">
+                    </div>
+                    <div class="taxt discount1">
+                        <h2>Tax (%)</h2>
+                        <input id="taxInput" type="number" min="0" step="0.01" placeholder="10">
                     </div>
                     <div class="totalamountbox discount1">
                         <h2>Total amount</h2>
-                        <input type="text" name="" id="" placeholder="1321323$">
+                        <input id="grandTotal" type="text" value="0.00" readonly>
                     </div>
                 </div>
             </div>
             <div class="paymentterm">
                 <div class="pay">
                     <h2>Payment Term</h2>
-                    <input type="text" name="" id="" placeholder="next 14 days">
+                    <input id="paymentTerm" name="paymentTerm" type="text" placeholder="next 14 days">
                 </div>
                 <div class="currency">
                     <h2>Currency</h2>
-                    <input type="text" name="" id="" placeholder="PKR">
+                    <input id="currency" name="currency" type="text" placeholder="PKR">
                 </div>
             </div>
         </div>
+        <div id="invoicePreview" class="previewbox" hidden></div>
         <div class="cancel">
-            <button id="cancel">Cancel</button>
-            <button id="generate">Generate invoice</button>
+            <button id="cancel" type="button">Cancel</button>
+            <button id="generate" type="button">Generate invoice</button>
+            <button id="printInvoice" type="button">Print</button>
         </div>
     </div>
     </section>
+    <script src="../js/invoices.js"></script>
 </body>
 
 </html>
